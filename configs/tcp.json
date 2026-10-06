@@ -1,0 +1,118 @@
+{
+  "source": "node-a",
+  "transport": "tcp",
+  "nodes": [
+    {
+      "id": "node-a",
+      "address": "10.0.0.1",
+      "hostname": "alice.local",
+      "role": "node",
+      "port": 5101,
+      "x": 100,
+      "y": 210,
+      "host": "127.0.0.1"
+    },
+    {
+      "id": "router-1",
+      "address": "10.0.0.10",
+      "hostname": "r1.local",
+      "role": "router",
+      "port": 5110,
+      "x": 290,
+      "y": 210,
+      "host": "127.0.0.1"
+    },
+    {
+      "id": "router-2",
+      "address": "10.0.0.20",
+      "hostname": "r2.local",
+      "role": "router",
+      "port": 5120,
+      "x": 490,
+      "y": 100,
+      "host": "127.0.0.1"
+    },
+    {
+      "id": "router-3",
+      "address": "10.0.0.30",
+      "hostname": "r3.local",
+      "role": "router",
+      "port": 5130,
+      "x": 490,
+      "y": 320,
+      "host": "127.0.0.1"
+    },
+    {
+      "id": "node-b",
+      "address": "10.0.0.2",
+      "hostname": "bob.local",
+      "role": "node",
+      "port": 5102,
+      "x": 700,
+      "y": 65,
+      "host": "127.0.0.1"
+    },
+    {
+      "id": "server",
+      "address": "10.0.0.50",
+      "hostname": "server.local",
+      "role": "server",
+      "port": 5150,
+      "x": 720,
+      "y": 215,
+      "host": "127.0.0.1"
+    },
+    {
+      "id": "dns",
+      "address": "10.0.0.53",
+      "hostname": "dns.local",
+      "role": "dns",
+      "port": 5153,
+      "x": 720,
+      "y": 375,
+      "host": "127.0.0.1"
+    }
+  ],
+  "links": [
+    {
+      "source": "node-a",
+      "target": "router-1",
+      "cost": 1
+    },
+    {
+      "source": "router-1",
+      "target": "router-2",
+      "cost": 1
+    },
+    {
+      "source": "router-1",
+      "target": "router-3",
+      "cost": 2
+    },
+    {
+      "source": "router-2",
+      "target": "server",
+      "cost": 1
+    },
+    {
+      "source": "router-3",
+      "target": "server",
+      "cost": 2
+    },
+    {
+      "source": "router-2",
+      "target": "node-b",
+      "cost": 1
+    },
+    {
+      "source": "router-3",
+      "target": "dns",
+      "cost": 1
+    },
+    {
+      "source": "router-2",
+      "target": "router-3",
+      "cost": 3
+    }
+  ]
+}
