@@ -1,0 +1,6 @@
+build
+.runtime
+.git
+__pycache__
+*.pyc
+reports

@@ -1,0 +1,30 @@
+CMake unavailable; using equivalent direct C++20 build.
+Packet roundtrip, HMAC, corruption, bounds, TTL, IPv4 and hex tests passed
+test_auth_validation_and_rebinding (test_api.APITests.test_auth_validation_and_rebinding) ... ok
+test_dashboard_and_state (test_api.APITests.test_dashboard_and_state) ... ok
+test_real_http_overlay (test_api.APITests.test_real_http_overlay) ... ok
+test_websocket_frames_and_close (test_api.APITests.test_websocket_frames_and_close) ... ok
+test_duplicate_address_rejected (test_network.RoutingTests.test_duplicate_address_rejected) ... ok
+test_endpoints_cannot_route (test_network.RoutingTests.test_endpoints_cannot_route) ... ok
+test_shortest_and_alternate (test_network.RoutingTests.test_shortest_and_alternate) ... ok
+test_static_routes_do_not_failover (test_network.StaticIntegration.test_static_routes_do_not_failover) ... ok
+test_01_ping_real_hops (test_network.TCPIntegration.test_01_ping_real_hops) ... ok
+test_02_dns_http_and_data (test_network.TCPIntegration.test_02_dns_http_and_data) ... ok
+test_02_self_ping (test_network.TCPIntegration.test_02_self_ping) ... ok
+test_03_ttl_and_faults (test_network.TCPIntegration.test_03_ttl_and_faults) ... ok
+test_04_link_reroute (test_network.TCPIntegration.test_04_link_reroute) ... ok
+test_05_kill_detect_recover_restart (test_network.TCPIntegration.test_05_kill_detect_recover_restart) ... ok
+test_06_invalid_datagram_survives (test_network.TCPIntegration.test_06_invalid_datagram_survives) ... ok
+test_07_fragmented_tcp_frame (test_network.TCPIntegration.test_07_fragmented_tcp_frame) ... ok
+test_01_ping_real_hops (test_network.UDPIntegration.test_01_ping_real_hops) ... ok
+test_02_dns_http_and_data (test_network.UDPIntegration.test_02_dns_http_and_data) ... ok
+test_02_self_ping (test_network.UDPIntegration.test_02_self_ping) ... ok
+test_03_ttl_and_faults (test_network.UDPIntegration.test_03_ttl_and_faults) ... ok
+test_04_link_reroute (test_network.UDPIntegration.test_04_link_reroute) ... ok
+test_05_kill_detect_recover_restart (test_network.UDPIntegration.test_05_kill_detect_recover_restart) ... ok
+test_06_invalid_datagram_survives (test_network.UDPIntegration.test_06_invalid_datagram_survives) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 11.352s
+
+OK
